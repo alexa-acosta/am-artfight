@@ -22,7 +22,8 @@ a {
 
 .header,
 .bar,
-.links {
+.links,
+.ann {
     display: flex;
 }
 
@@ -30,13 +31,13 @@ a {
     flex-direction: column;
     gap: 0;
 
-    background: url('./img/neocities.png') no-repeat left top;
+    background: url('./img/neocities.png') repeat-x left top;
     background-size: auto 100px;
     background-origin: border-box;
 }
 
 .bar {
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 10rem;
     align-items: center;
 }
 
@@ -45,4 +46,16 @@ a {
     align-items: center;
     list-style-type: none;
     margin-left: auto;
+}
+
+.ann {
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+#ticker {
+    flex: 0 1 500px;
+    padding: 0.3rem;
+    list-style-type: none;
 }

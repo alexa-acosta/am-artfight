@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
     <title>Alexa & Max's Themed Art Fight</title>
 </head>
@@ -13,7 +14,9 @@
     <div class="header">
         <a href="./index.html" class="logo" style="height: 100px;"></a>
         <div class="bar">
-            <span id="dateclock">time here</span>
+            <span id="datetime"></span>
+            <script type="text/javascript" src="./js/datetime.js"></script>
+
             <ul class="links">
                 <li><a href="/">link</a></li>
                 <li><a href="/">link</a></li>
@@ -23,8 +26,14 @@
         </div>        
     </div>
 
-    <div class="ticker">
-        ticker here
+    <div class="ann">
+        <img src="./img/neocities.png" style="height: 25px; width: 25px;" />
+        <ul id="ticker">
+            <li class="ticker-item">this sentence has 50 characters and i'm not lying!</li>
+            <li class="ticker-item">this sentence has 50 characters and i'm not lying!</li>
+            <li class="ticker-item">this sentence has 50 characters and i'm not lying!</li>
+        </ul>
+        <script type="text/javascript" src="./js/ticker.js"></script>
     </div>
 
     <div class="hero">
