@@ -8,7 +8,7 @@ function startTime() {
         minute: "numeric",
         hour12: true});
 
-    document.getElementById("datetime").innerHTML = todayTime.toLocaleString();
+    document.getElementById("datetime").innerHTML = todayTime.toLocaleString() + " PDT";
 
     t = setTimeout(function () {
         startTime();

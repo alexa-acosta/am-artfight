@@ -12,9 +12,9 @@ function tickOut() {
   });
 }
 
-/* change this depending on amount of ticker items */
-var itemCount = 3;
+/* delay between ticker fades */
+var seconds = 10;
 
 setInterval(function () {
   tickOut();
-}, (3000 * itemCount));
+}, (1000 * seconds));
