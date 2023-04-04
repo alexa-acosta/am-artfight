@@ -25,12 +25,19 @@ body a {
     text-decoration: none;
 }
 
+hr {
+    padding: 0;
+    margin: 1rem;
+}
+
 /** defaults end */
 
 .header,
 .bar,
 .links,
-.ann {
+.ann,
+.cards,
+.intro {
     display: flex;
 }
 
@@ -73,7 +80,7 @@ body a {
 
 .hero-image {
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     height: 400px;
     overflow: hidden;
 }
@@ -82,17 +89,63 @@ body a {
     padding: 1rem 15vw;
 }
 
-.timestamp {
+.cards {
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    gap: 0rem;
+    flex: 0 0 200px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10rem;
+    border: none;
+}
+
+.intro-text {
+    flex: 1 1 100%;
+    padding: 0 2rem;
+}
+
+.intro-text h1 {
+    text-align: center;
+}
+
+.intro img {
+    flex: 0 1 250px;
+    width: 250px;
+}
+
+.blog-links h2,
+.timeline h2 {
+    padding: 0 1rem;
+}
+
+.blogs {
+    list-style-type: none;
+    padding: 0 4rem 0.5rem;
+}
+
+.read-more {
+    padding: 0 1rem;
     color: #4C4E52;
     font-style: italic;
 }
 
-hr {
-    padding: 0;
-    margin: 1rem;
+.table > thead > tr > th:first-child,
+.table > tbody > tr > td:first-child {
+    width: 15vw;
+    text-align: right;
 }
 
 .footer {
     display: flex;
     justify-content: space-evenly;
+    margin: 0.5rem 0;
 }
