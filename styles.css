@@ -129,7 +129,7 @@ hr {
 
 .blogs {
     list-style-type: none;
-    padding: 0 4rem 0.5rem;
+    padding: 0 4rem;
 }
 
 .read-more {
@@ -142,6 +142,10 @@ hr {
 .table > tbody > tr > td:first-child {
     width: 15vw;
     text-align: right;
+}
+
+.table.table-bordered.table-sm.table-striped {
+    margin-bottom: 0px;
 }
 
 .footer {
